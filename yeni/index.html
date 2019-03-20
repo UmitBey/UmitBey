@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			#canv{border:1px solid red}
+		</style>
+	</head>
+	
+	
+	
+	
+	<body>
+		
+		
+		<header>
+			<hgroup>
+				<h1>Başlık 1</h1>
+				<h2>Alt Başlık</h2>
+			</hgroup>
+		</header>
+		
+		
+		<figure>
+			<img src="joker.jpg" width="150px" height="150px">
+			<figcaption>
+				Resim = JOKER
+			</figcaption>
+		</figure>
+		
+		<br>
+		
+		<video height="150" width="300" controls>
+			<source src="Kendime.mp4">
+		</video>
+		
+		<br>
+		
+		<audio height="150" width="300" controls>
+			<source src="Kül.mp3">
+		</audio>
+		
+		<br>
+		
+		<embed src="kan.swf">
+		
+		<br>
+		
+		<canvas id="canv" height="150" width="300"></canvas>
+		
+		<br>
+		
+		<canvas id="c"></canvas>
+		<script>
+			var canvas = document.getElementById("c");
+			context = canvas.getContext("2d");
+			context.fillStyle = 'blue';
+			context.fillRect(10,20,200,100);
+		</script>
+		
+		<br>
+		
+		<svg height="150" width="150">
+			<circle cx="75" cy="75" r="60" stroke="blue" stroke-width="4" fill="green" />
+		</svg>
+		
+		<br>
+		
+		<svg height="250" width="450">
+			<polyline points="20,25 40,45 60,70 90,125" style="fill:none;stroke:blue;stroke-width:5" />
+		</svg>
+		
+	</body>
+</html>
