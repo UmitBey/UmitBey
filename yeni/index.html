@@ -1,73 +1,109 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			#canv{border:1px solid red}
-		</style>
-	</head>
-	
-	
-	
-	
-	<body>
-		
-		
-		<header>
-			<hgroup>
-				<h1>Başlık 1</h1>
-				<h2>Alt Başlık</h2>
-			</hgroup>
-		</header>
-		
-		
-		<figure>
-			<img src="joker.jpg" width="150px" height="150px">
-			<figcaption>
-				Resim = JOKER
-			</figcaption>
-		</figure>
-		
-		<br>
-		
-		<video height="150" width="300" controls>
-			<source src="Kendime.mp4">
-		</video>
-		
-		<br>
-		
-		<audio height="150" width="300" controls>
-			<source src="Kül.mp3">
-		</audio>
-		
-		<br>
-		
-		<embed src="kan.swf">
-		
-		<br>
-		
-		<canvas id="canv" height="150" width="300"></canvas>
-		
-		<br>
-		
-		<canvas id="c"></canvas>
-		<script>
-			var canvas = document.getElementById("c");
-			context = canvas.getContext("2d");
-			context.fillStyle = 'blue';
-			context.fillRect(10,20,200,100);
-		</script>
-		
-		<br>
-		
-		<svg height="150" width="150">
-			<circle cx="75" cy="75" r="60" stroke="blue" stroke-width="4" fill="green" />
-		</svg>
-		
-		<br>
-		
-		<svg height="250" width="450">
-			<polyline points="20,25 40,45 60,70 90,125" style="fill:none;stroke:blue;stroke-width:5" />
-		</svg>
-		
-	</body>
+<head>
+	<title>Ders</title>
+	<style>
+		body
+		{
+			color:red;/*Renk Adı ile Renk Ataması*/
+		}
+		h1
+		{
+			text-decoration: overline;/*Üstü Çizilir*/
+			color:#021247;/*Kodlarla Renk Ataması*/
+		}
+		h2
+		{
+			text-decoration: line-through;/*Üzeri Çizilir*/
+		}
+		h3
+		{
+			text-decoration: underline;/*Altı Çizilir*/
+		}
+		p.ex
+		{
+			color: rgb(100,200,150);/*RGB Renk Ataması*/
+		}
+		p.main
+		{
+			text-align:center;/*Metni Ortalar*/
+		}
+		.hizalama
+		{
+			width: 500px;/*Yükseklik Verir*/
+			height: 200px;/*Genişlik Verir*/
+			background-color: skyblue;/*Arka Plana Renk Verir*/
+			color: black;/*Yazılara Renk Verir*/
+		}
+		.hizalama:hover /*Üzerine Gelindiğinde Tip Değiştirir*/
+		{
+			width: 600px;/*Yüksekliği Değiştirir*/
+			height: 150px;/*Genişliği Değiştirir*/
+			background-color: pink;/*Arka Planı Değiştirir*/
+			border-color: violet;/*Yazı Rengini Değiştirir*/
+		}
+		p.büyükharf
+		{
+			text-transform: uppercase;/*Bütün Harfleri Büyütür*/
+		}
+		p.küçükharf
+		{
+			text-transform: lowercase;/*Bütün Harfleri Küçültür*/
+		}
+		p.ilkharfbüyük
+		{
+			text-transform: capitalize;/*Kelimelerin İlk Harfini Büyütür*/
+		}
+		p.tabgibibişi
+		{
+			text-indent: 50px;/*Satır Başına Boşluk Bırakır*/
+		}
+		.renk:focus
+		{
+			background-color:skyblue; 
+		}
+		a:link
+		{
+			background-color: #B2FF99;
+		}
+		a:visited
+		{
+			background-color: #FFFF85;
+		}
+		a:hover
+		{
+			background-color: #FF706D;
+		}
+		a:active
+		{
+			background-color: #FF704D;
+		}
+	</style>
+</head>
+<body>
+	<h1>İlginç Bir Renk, Hexadecimal Atamış</h1>
+	<h2>İlginç Bir Renk, Hexadecimal Atamış</h2>
+	<h3>İlginç Bir Renk, Hexadecimal Atamış</h3>
+
+	<p>Hangi Renk</p>
+	<p class="büyükharf">Tuğkan - Aylar Olmuş</p>
+	<p class="küçükharf">Tuğkan - Geber</p>
+	<p class="ilkharfbüyük">Tuğkan - Belki de</p>
+	<p class="tabgibibişi">Tuğkan - Bu Kalp Seni Unutur Mu</p>
+	<p class="ex">Rgb Karması Bir Renk</p>
+	<p class="main">Ölmek İçin On Üç Sebep ya da İngilizce özgün adıyla 13 Reasons Why, Jay Asher'ın aynı adlı romanından Brian Yorkey tarafından Netflix için uyarlanan Amerikan gençlik
+	web televizyon dizisidir. Dizideki olaylar, lise öğrencisi Clay Jensen (Dylan Minnette) ile okuldaki bazı kişilerce cesaretinin kırılması sonucu intihar eden arkadaşı Hannah Baker
+	(Katherine Langford) etrafında dönmektedir. İntiharından hemen önce Hannah tarafından kaydedilen bir kutu dolusu kaset, Hannah'nın intihar edişinin on üç gerekçesini içermektedir.</p>
+
+	<div class="hizalama">Ölmek İçin On Üç Sebep ya da İngilizce özgün adıyla 13 Reasons Why, Jay Asher'ın aynı adlı romanından Brian Yorkey tarafından Netflix için uyarlanan Amerikan
+	ençlik web	televizyon dizisidir. Dizideki olaylar, lise öğrencisi Clay Jensen (Dylan Minnette) ile okuldaki bazı kişilerce cesaretinin kırılması sonucu intihar eden arkadaşı Hannah
+	Baker (Katherine Langford) etrafında dönmektedir. İntiharından hemen önce Hannah tarafından kaydedilen bir kutu dolusu kaset, Hannah'nın intihar edişinin on üç gerekçesini
+	içermektedir.</div>
+	<a href="www.google.com">www.Google.com</a>
+	<form>
+		<label>Adınız : </label> <input class="renk" type="text"><br><br>
+		<label>Soyadınız : </label> <input type="text"><br>
+		<input type="submit" name="Gönder"/>
+	</form>
+</body>
 </html>
